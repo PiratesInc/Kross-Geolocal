@@ -47,7 +47,7 @@ color:#fff !important;;
 
 /* ! HEADINGS ================== */
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
 	display:block;
 	font-family: Helvetica, Arial, sans-serif; 
 	font-weight:700;
@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 { font-size: 2.2em; line-height: 2em; }
 
-h2 { font-size:1.6em; line-height:1.2em; }
+h2 { font-size:1.6em; line-height:1.2em; font-family: 'DaxCompactBlack'; }
 
 h3 { font-size:1.5em; line-height:1.1em; }
 
@@ -111,7 +111,7 @@ header {
 	
 	
 body.no-fan header h1 {
-	left: 75%;
+	left: 65%;
 }
 
 
@@ -119,33 +119,29 @@ body.no-fan header h1 {
 
 section {
 	position: relative;
+	min-height: 470px;
+	padding: 0 10px;
 
 }
 
-	section.producto img {
+
+	img.botella {
 		display: block;
-		width: 220px;
-		height: 180px;
-		float: left;
-		margin: 10px;
+		position: absolute;
+		z-index: 90;
+		width: 234px;
+		height: 465px;
+		top: -120px;
+		left: 30px;
 	}
 	
-	section.producto hgroup {
-		width: 220px;
+	section hgroup {
+		width: 380px;
+		padding: 20px 10px;;
 		float: right;
-	}
-
-img.botella {
-	display: block;
-	position: absolute;
-	z-index: 90;
-	width: 234px;
-	height: 465px;
-	top: -120px;
-	left: 20px;
-}
+	}	
 	
-	
+body.no-fan h2 { font-size: 4em; line-height: 1em; }
 	
 	
 	
@@ -186,6 +182,10 @@ a.btn {
 	color: #fff;
 	text-align: center;
 	line-height: 50px;
+}
+
+a.btn:hover {
+ color: #e5a22c;
 }
 
 
